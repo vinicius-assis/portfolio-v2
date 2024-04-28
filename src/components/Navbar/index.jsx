@@ -17,7 +17,7 @@ const Navbar = () => {
         <SocialLink href="https://github.com/vinicius-assis">
           <GithubIcon />
         </SocialLink>
-        <SocialLink href="/https://www.linkedin.com/in/vinicius-assis">
+        <SocialLink href="https://www.linkedin.com/in/vinicius-assis">
           <LinkedInIcon />
         </SocialLink>
       </nav>
