@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../Logo";
 import Navlink from "../Navlink";
+import { GithubIcon, LinkedInIcon } from "../Icons";
+import SocialLink from "../SocialLink";
 
 const Navbar = () => {
   return (
@@ -11,12 +13,13 @@ const Navbar = () => {
         <Navlink href="/projects" title="Projects" />
         <Navlink href="/articles" title="Articles" />
       </nav>
-      <nav>
-        <Navlink href="/" target="_blank" title="T" />
-        <Navlink href="/" target="_blank" title="T" />
-        <Navlink href="/" target="_blank" title="T" />
-        <Navlink href="/" target="_blank" title="T" />
-        <Navlink href="/" target="_blank" title="T" />
+      <nav className="flex gap-5">
+        <SocialLink href="https://github.com/vinicius-assis">
+          <GithubIcon />
+        </SocialLink>
+        <SocialLink href="/https://www.linkedin.com/in/vinicius-assis">
+          <LinkedInIcon />
+        </SocialLink>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
