@@ -13,9 +13,7 @@ const Navlink = ({ href, title, className = "" }) => {
         className={`h-[1px] inline-block bg-dark absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           currentPath === href ? "w-full" : "w-0"
         }`}
-      >
-        &nbsp;
-      </span>
+      ></span>
     </Link>
   );
 };
