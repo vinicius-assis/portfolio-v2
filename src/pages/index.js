@@ -4,6 +4,7 @@ import Image from "next/image";
 import profileImage from "../../public/images/profile/developer.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -37,12 +38,14 @@ export default function Home() {
                 <Link
                   href="/vinicius-assis.pdf"
                   target="_blank"
-                  className="bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   download
                 >
                   Resume
+                  <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
                   href="mailto:viniciusassis.dev@hotmail.com"
                   target="_blank"
                 >
