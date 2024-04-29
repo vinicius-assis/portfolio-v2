@@ -2,10 +2,18 @@ import Layout from "@/template/Layout";
 import Link from "next/link";
 import React from "react";
 import { BrandLogo } from "../Icons";
+import { useRouter } from "next/router";
 
 const Footer = () => {
+  const router = useRouter();
+  const currentPath = router.asPath;
+
   return (
-    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg fixed bottom-0">
+    <footer
+      className={`w-full border-t-2 border-solid border-dark font-medium text-lg ${
+        currentPath === "/" && "fixed bottom-0"
+      }`}
+    >
       <Layout className="py-8 flex items-center justify-between">
         <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
         <div className="flex items-center">
