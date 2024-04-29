@@ -5,6 +5,7 @@ import Image from "next/image";
 import profileImage from "../../public/images/profile/developer-about.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
+import SkillSection from "@/components/SkillSection";
 
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
@@ -101,6 +102,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          <SkillSection />
         </Layout>
       </main>
     </>
