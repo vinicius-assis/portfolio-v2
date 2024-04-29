@@ -681,7 +681,7 @@ export const BrandLogo = ({ className, ...rest }) => (
     height={24}
     viewBox="-0.0000457763671875 -0.000004291534423828125 130 130"
     fill="none"
-    className={`w-full h-auto ${className}`}
+    className={className}
     {...rest}
   >
     <path
