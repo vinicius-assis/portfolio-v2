@@ -6,6 +6,7 @@ import profileImage from "../../public/images/profile/developer-about.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import SkillSection from "@/components/SkillSection";
+import ExperienceSection from "@/components/ExperienceSection";
 
 const AnimatedNumber = ({ value }) => {
   const ref = useRef(null);
@@ -103,6 +104,7 @@ export default function About() {
             </div>
           </div>
           <SkillSection />
+          <ExperienceSection />
         </Layout>
       </main>
     </>
