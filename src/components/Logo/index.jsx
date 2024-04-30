@@ -14,7 +14,7 @@ const Logo = () => {
         className="w-16 h-16 text-light flex items-center justify-center rounded-full text-2xl font-bold"
         whileHover={{ scale: 1.1 }}
       >
-        <BrandLogo />
+        <BrandLogo className="w-[60px] h-[60px]" />
       </MotionLink>
     </div>
   );
